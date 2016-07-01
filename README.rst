@@ -14,6 +14,7 @@ Quick start
     INSTALLED_APPS = (
         ...
         'reusable_blog',
+        'disqus',
     )
 
 2. Include the polls URLconf in your project urls.py like this::
