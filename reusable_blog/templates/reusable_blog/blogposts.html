@@ -2,11 +2,13 @@
 
 {% block content %}
 <div class="container">
+    {% if user.is_staff %}
     <div class="row">
-        {% if user.is_staff %}
-        <a href="/post/" class="btn btn-primary">Create New Post</a>
-    </div>
 
+        <a href="/post/" class="btn btn-primary">Create New Post</a>
+
+    </div>
+    {% endif %}
     {% for post in posts %}
 
         <div class="row">
